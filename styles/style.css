@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-green-hover: #1ed760;
+  --color-green: #117a37;
+  --color-grey-footer: #919496;
+  --color-grey-icons: rgb(24, 24, 24);
+}
+
+@font-face {
+  font-family: "Spotify-Light";
+  src: url("../fonts/GothamLight.ttf");
+}
+
+@font-face {
+  font-family: "Spotify-Medium";
+  src: url("../fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: "Spotify-Bold";
+  src: url("../fonts/GothamBold.ttf");
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-black);
+  padding: 0 2%;
+}
+
+.header__center {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header__logo {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 120px;
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__links {
+  margin-left: 35px;
+  color: var(--color-white);
+}
+
+.links {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Spotify-Medium", sans-serif;
+  letter-spacing: 1px;
+  line-height: 80px;
+}
+
+.links:hover {
+  color: var(--color-green-hover);
+}
+
+.main {
+  background-color: rgb(41, 65, 171);
+  background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 120% 60%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 200px 10%;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 8rem;
+  font-family: "Spotify-Bold", sans-serif;
+  color: var(--color-green-hover);
+  margin-bottom: 80px;
+}
+
+.main__span {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Spotify-Medium";
+  color: var(--color-green-hover);
+  margin-bottom: 50px;
+}
+
+.btn__download {
+  background-color: var(--color-green-hover);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgb(41, 65, 171);
+  border-radius: 25px;
+  font-family: "Spotify-Medium", sans-serif;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.btn__download:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  padding: 0 2%;
+  background-color: var(--color-black);
+}
+
+.footer__content {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__logo {
+  width: 200px;
+  margin-top: -30px;
+}
+
+.footer__tags {
+  width: 740px;
+  display: flex;
+}
+
+.footer__links {
+  padding: 0 80px 0 0;
+}
+
+.footer__links span {
+  color: var(--color-grey-footer);
+  font-size: 0.9rem;
+  font-family: "Spotify-Medium", sans-serif;
+}
+
+.footer__links li {
+  margin: 12px 0;
+}
+
+.footer__links li a {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-family: "Spotify-Medium", sans-serif;
+}
+
+.footer__links li a:hover {
+  color: var(--color-green-hover);
+}
+
+.footer__social__media {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__social__media a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background-color: var(--color-grey-icons);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 10px;
+}
+
+.footer__social__media a:hover {
+  color: var(--color-green-hover);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 50px 0;
+}
+
+.footer__bottom__links {
+  display: flex;
+}
+
+.footer__bottom__links li {
+  margin-right: 25px;
+}
+
+.footer__bottom__links li a {
+  font-size: 0.8rem;
+  color: var(--color-grey-footer);
+  font-family: "Spotify-Light", sans-serif;
+}
+
+.footer__bottom__links li a:hover {
+  color: var(--color-green-hover);
+}
+
+.footer__bottom__copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bottom__copy a {
+  color: var(--color-grey-footer);
+  font-size: 0.8rem;
+  font-family: "Spotify-Light", sans-serif;
+  margin-bottom: 3px;
+}
+
+.footer__bottom__copy a span:hover {
+  color: var(--color-green-hover);
+}
+
+.footer__bottom__copy span {
+  color: var(--color-grey-footer);
+  font-size: 0.8rem;
+  font-family: "Spotify-Light", sans-serif;
+  margin-top: 3px;
+}
